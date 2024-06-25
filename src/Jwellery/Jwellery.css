@@ -121,6 +121,17 @@
   cursor: pointer;
 }
 
+/* material  (color) */
+.gold{
+  filter: sepia(86) saturate(3) hue-rotate(3deg) brightness(1.2);
+}
+.silver{
+ filter: sepia(-1) saturate(3) hue-rotate(30deg) brightness(1.2);  
+}
+.copper{
+ filter: sepia(86) saturate(3) hue-rotate(30deg) brightness(1.2);  
+}
+
 
 @media screen and (max-width: 800px) {
   .ring-features {

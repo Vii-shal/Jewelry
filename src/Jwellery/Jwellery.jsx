@@ -18,8 +18,20 @@ function Jwellery() {
   function changeRingCurvatureType(ringCurvatureType){
     setRingBase(ringCurvatureType)
   }
-  function changeColor(ringColor){
-    setRingBase(ringColor)
+  function changeMaterial(id){
+    const img = document.querySelector('#ringBase')
+    if (id === 'ring-material-1'){
+      img.classList.add('silver');
+      img.classList.remove('gold', 'copper');
+    }
+    else if (id === 'ring-material-2'){
+      img.classList.add('gold');
+      img.classList.remove('silver', 'copper');
+    }
+    else if (id === 'ring-material-3'){
+      img.classList.add('copper');
+      img.classList.remove('silver', 'gold');
+    }
   }
 
   const ring_data = [
@@ -68,52 +80,7 @@ function Jwellery() {
     },
   ];
 
-
-  // for 3d img
-  // const [isDragging, setIsDragging] = useState(false);
-  // const [startX, setStartX] = useState(0);
-  // const [startY, setStartY] = useState(0);
-  // const [initialRotX, setInitialRotX] = useState(0);
-  // const [initialRotY, setInitialRotY] = useState(0);
-  // const [rotX, setRotX] = useState(0);
-  // const [rotY, setRotY] = useState(0);
-
-  // const handleMouseDown = (e) => {
-  //   setIsDragging(true);
-  //   setStartX(e.clientX);
-  //   setStartY(e.clientY);
-  //   const transform = e.target.style.transform;
-  //   if (transform) {
-  //     const values = transform
-  //       .split('(')[1]
-  //       .split(')')[0]
-  //       .split(',');
-  //     setInitialRotX(Math.atan2(values[9], values[10]) * (180 / Math.PI));
-  //     setInitialRotY(Math.atan2(values[8], values[0]) * (180 / Math.PI));
-  //   } else {
-  //     setInitialRotX(0);
-  //     setInitialRotY(0);
-  //   }
-  // };
-
-  // const handleMouseMove = (e) => {
-  //   if (isDragging) {
-  //     const deltaX = e.clientX - startX;
-  //     const deltaY = e.clientY - startY;
-  //     setRotX(initialRotX + deltaY / 2);
-  //     setRotY(initialRotY - deltaX / 2);
-  //   }
-  // };
-
-  // const handleMouseUp = () => {
-  //   setIsDragging(false);
-  // };
-
-  // const handleContextMenu = (e) => {
-  //   e.preventDefault();
-  //   setRotX(0);
-  //   setRotY(0);
-  // };
+ 
 
 
   return (
@@ -153,6 +120,30 @@ function Jwellery() {
             </div>
           </div>
         ))}
+        {/* material */}
+          <div  className="ring-type-container">
+            <div className="ring-type-container-title">Material</div>
+            <div className="ring-type-buttons">
+                <div  className="ring-type-button" id={`ring-material-1`}  
+                    onClick={()=>changeMaterial('ring-material-1')}
+                    style={{backgroundColor:'silver'}}
+                    >
+                  
+                </div>
+                <div  className="ring-type-button" id={`ring-material-2`}  
+                    onClick={()=>changeMaterial('ring-material-2')}
+                    style={{backgroundColor:'gold'}}
+                    >
+                  
+                </div>
+                <div  className="ring-type-button" id={'ring-materail-3'}  
+                    onClick={()=>changeMaterial('ring-material-3')}
+                    style={{backgroundColor:' #e39780'}}
+                >
+                  
+                </div>
+            </div>
+          </div>
       </div>
     </div>
   );
