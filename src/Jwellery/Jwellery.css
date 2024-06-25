@@ -155,4 +155,18 @@
   .ring-features {
     width: 100%;
   }
+  .ring-type-container-title {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .ring-type-container {
+    padding: 4px;
+    border: 1px solid gray;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ring-type-button {
+    height: 40px;
+    width: 40px;
+  }
 }
