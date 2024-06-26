@@ -152,7 +152,7 @@ function Jwellery() {
                         : null
                     } 
                 >
-                  <img src={btn} alt={`${btnIndex + 1}`} />
+                  {/* <img src={btn} alt={`${btnIndex + 1}`} /> */}
                 </div>
               ))}
             </div>
