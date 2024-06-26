@@ -12,19 +12,19 @@ function Jwellery() {
 
   let  images = {
     // "11111": "../../Rings",
-    // "11111": "../../Rings/product15.jpeg",
+    "11111": "../../Rings/product15.jpeg",
     "11112": "../../Rings/product17.jpeg",
     "11113": "../../Rings/product16.jpeg",
-    // "12111": "../../Rings/product1.jpg",
+    "12111": "../../Rings/product1.jpg",
     "12112": "../../Rings/product5.jpg",
     "12113": "../../Rings/product4.jpg",
-    // "13111": "../../Rings/product6.jpg",
+    "13111": "../../Rings/product6.jpg",
     "13112": "../../Rings/product11.jpg",
     "13113": "../../Rings/product10.jpg",
-    // "14111": "../../Rings/product7.jpg",
+    "14111": "../../Rings/product7.jpg",
     "14112": "../../Rings/product9.jpg",
     "14113": "../../Rings/product8.jpg",
-    // "15111": "../../Rings/product12.jpg",
+    "15111": "../../Rings/product12.jpg",
     "15112": "../../Rings/product14.jpg",
     "15113": "../../Rings/product13.jpg",
   }
@@ -83,39 +83,38 @@ function Jwellery() {
   const ring_data = [
     {
       ring_type_heading: 'Ring Shape',
-      ring_buttons: [images[11111],
+      ring_buttons: ["../../Rings/product15.jpeg",
        ],
       // ring_buttons: ['1','2','3','4']
     },
     {
       ring_type_heading: 'Gem Type',
-      ring_buttons: [images[11111],
-                    images[12111],
-                    images[13111],
-                    images[14111],
-                    images[15111],
+      ring_buttons: ["../../Rings/product15.jpeg",
+                    "../../Rings/product1.jpg",
+                    "../../Rings/product6.jpg",
+                    "../../Rings/product7.jpg",
+                    "../../Rings/product12.jpg",
           ],
       // ring_buttons: ['1','2','3','4','5','6','7','8']
     },
     {
       ring_type_heading: 'Ring Curvature',
-      ring_buttons: [images[11111],
+      ring_buttons: ["../../Rings/product15.jpeg",
        
         ],
     },
     {
       ring_type_heading: 'Gem line',
-      ring_buttons: [images[11111],
+      ring_buttons: ["../../Rings/product15.jpeg",
        
       ],
     },
-    // {
-    //   ring_type_heading: 'Material',
-    //   // ring_buttons: ['../Rings/Images/silver-btn.jpeg',
-    //   //   '../Rings/Images/gold-btn.jpeg',
-    //   //    '../Rings/Images/copper-btn.jpeg'],
-    //   ring_buttons: ['1','2','3']
-    // },
+    {
+      ring_type_heading: 'Material',
+      ring_buttons: ['../../Rings/Images/silver-btn.jpeg',
+        '../../Rings/Images/gold-btn.jpeg',
+         '../../Rings/Images/copper-btn.jpeg'],
+    },
   ];
 
 
@@ -148,8 +147,8 @@ function Jwellery() {
                         ? changeRingCurvatureType(btnIndex+ 1)
                         : ring.ring_type_heading === 'Gem line'
                         ? changeRingLineType(btnIndex + 1)
-                        // : ring.ring_type_heading === 'Material'
-                        // ? changeRingMaterialType(btnIndex + 1)
+                        : ring.ring_type_heading === 'Material'
+                        ? changeRingMaterialType(btnIndex + 1)
                         : null
                     } 
                 >
