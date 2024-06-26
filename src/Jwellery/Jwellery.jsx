@@ -5,19 +5,62 @@ import React360Viewer from 'react-360-view';
 
 function Jwellery() {
 
-  const [ringBase, setRingBase] = useState('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKuZtDesRGht42ry6u1GouhuQPxvb1jns3JqYZceE7uiy7usWB');
+  const [ringBase, setRingBase] = useState("11111");
   // const [gem, setGem] = useState('');
 
+  let  images = {
+    "11111": "../Rings/product15.jpeg",
+    "11112": "../Rings/product17.jpeg",
+    "11113": "../Rings/product16.jpeg",
+    "12111": "../rings/product1.jpg",
+    "12112": "../rings/product5.jpg",
+    "12113": "../rings/product4.jpg",
+    "13111": "../rings/product6.jpg",
+    "13112": "../rings/product11.jpg",
+    "13113": "../rings/product10.jpg",
+    "14111": "../rings/product7.jpg",
+    "14112": "../rings/product9.jpg",
+    "14113": "../rings/product8.jpg",
+    "15111": "../rings/product12.jpg",
+    "15112": "../rings/product14.jpg",
+    "15113": "../rings/product13.jpg",
+  }
 
-  function changeRingType(ringType){
-    setRingBase(ringType)
+  function changeRingType(num) {
+    let newRingBase = ringBase.split('');
+    newRingBase[0] = num;
+    setRingBase(newRingBase.join(''));
+    console.log(newRingBase.join(''));
   }
-  function changeGemType(gemType){
-    setGem(gemType)
+
+  function changeGemType(num) {
+    let newRingBase = ringBase.split('');
+    newRingBase[1] = num;
+    setRingBase(newRingBase.join(''));
+    console.log(newRingBase.join(''));
   }
-  function changeRingCurvatureType(ringCurvatureType){
-    setRingBase(ringCurvatureType)
+
+  function changeRingCurvatureType(num) {
+    let newRingBase = ringBase.split('');
+    newRingBase[2] = num;
+    setRingBase(newRingBase.join(''));
+    console.log(newRingBase.join(''));
   }
+
+  function changeRingLineType(num) {
+    let newRingBase = ringBase.split('');
+    newRingBase[3] = num;
+    setRingBase(newRingBase.join(''));
+    console.log(newRingBase.join(''));
+  }
+
+  function changeRingMaterialType(num) {
+    let newRingBase = ringBase.split('');
+    newRingBase[4] = num;
+    setRingBase(newRingBase.join(''));
+    console.log(newRingBase.join(''));
+  }
+
   function changeMaterial(id){
     const img = document.querySelector('#ringBase')
     if (id === 'ring-material-1'){
@@ -37,50 +80,41 @@ function Jwellery() {
   const ring_data = [
     {
       ring_type_heading: 'Ring Shape',
-      ring_buttons: ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Y1fc_2CkWIq7itufZ4WAPpgtvR5iNNHlutLk5S2c9A84Uazv',
-      
-         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTih6cyepijeubznfYUaYESXn0-IdYM4WXfYFXT-w6ODsDvno2',
-         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4Y63Vxt2j3n9DkyMrLuLjUsaof9j5AIkb3d6XM6zNzpEUiEO0',
-          ],
+      ring_buttons: [images[11111],
+       ],
+      // ring_buttons: ['1','2','3','4']
     },
     {
       ring_type_heading: 'Gem Type',
-      ring_buttons: ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Y1fc_2CkWIq7itufZ4WAPpgtvR5iNNHlutLk5S2c9A84Uazv',
-
-         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQscEwTP-NAK8Vm0V6gNpifsq_9dXyu4t8PJXRsncl_AEvO31X',
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkCkINKH9TVS7qR37HZqaumi8qYJyjpPHdsqoiIfwYqpBbCwQ',
-           'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDf-l7s2ccIKX22M3x7lcNs5DI3g2F5EFELSGyqUMn5O_dou9c',
-            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlmJd0gUjFbus_HN-HMvLD0aakKWfv-vYx7DCHAZCc1lYNkIZ9',
-            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0P6Q7oclkkB9bC5Uy0VU88WsMbY77bjFoy9pKaPm3nnkh2Tnv',
-            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTln3AqSUYIXFxXT6InZKnTQgxTvzAAwArptiL4DkNKmVIo8Ixm',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsM-totdvTBDn0XFivG0tEcheznxuk4jakrBZP3GjJeS2HVfX3',
-            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDabG_31hwyOYzRjF0Brmj4aLS23AWjG8dfAywLcR_TS4jIcm-',
+      ring_buttons: [images[11111],
+                    images[12111],
+                    images[13111],
+                    images[14111],
+                    images[15111],
           ],
+      // ring_buttons: ['1','2','3','4','5','6','7','8']
     },
     {
       ring_type_heading: 'Ring Curvature',
-      ring_buttons: ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Y1fc_2CkWIq7itufZ4WAPpgtvR5iNNHlutLk5S2c9A84Uazv',
+      ring_buttons: [images[11111],
        
-        'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwiH6Kmb-wShViELUzPwyw1n0A0z1aQNqIFfFOz-ssm6-A2pGl',
-         'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIPC6B2IJ2dRvQ7QqVJpErJx90IsprNfg0UcHoQ2zVJEJTI3pp',
         ],
     },
     {
       ring_type_heading: 'Gem line',
-      ring_buttons: ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Y1fc_2CkWIq7itufZ4WAPpgtvR5iNNHlutLk5S2c9A84Uazv',
+      ring_buttons: [images[11111],
        
-         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqX5hRGkFirnv_haOLqkAWMGg0b1VdEgJFbmlqDdXVeLH-P0v2',
-         ],
+      ],
     },
     {
       ring_type_heading: 'Material',
-      ring_buttons: ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Y1fc_2CkWIq7itufZ4WAPpgtvR5iNNHlutLk5S2c9A84Uazv',
-        'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsdZTw_3ccIL3CP0_0PYzcPdiBCPXLgABlPIGCQim6dC79N-N0',
-         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9k7qfmbfVtSjrwYPfodkkuAWMkhRoOX6FNG0TTi3nu91jsEuV'],
+      ring_buttons: ['../public/images/silver-btn.jpeg',
+        '../public/images/gold-btn.jpeg',
+         '../public/images/copper-btn.jpeg'],
     },
   ];
 
- 
+
 
 
   return (
@@ -89,11 +123,9 @@ function Jwellery() {
       <div className="ring-container">
         <div className="image-wrapper">
               <img 
-                  id="ringBase" src={ringBase} 
-
+                  id="ringBase" src={images[ringBase]} 
               />
         </div>
-              {/* <img id="ringGem" src={gem} alt="Ring Gem" /> */}
       </div>
       </div>
       <div className="ring-features">
@@ -103,16 +135,19 @@ function Jwellery() {
             <div className="ring-type-buttons">
               {ring.ring_buttons.map((btn, btnIndex) => (
                 <div key={btnIndex} className="ring-type-button" id={`ring-type-button-${btnIndex + 1}`}  
-                    // onClick={() =>
-                    //     ring.ring_type_heading === 'Ring Shape'
-                    //     ? changeRingType(btn)
-                    //     : ring.ring_type_heading === 'Gem Type'
-                    //     ? changeGemType(btn)
-                    //     : ring.ring_type_heading === 'Material'
-                    //     ? changeRingType(btn)
-                    //     : null
-                    // } 
-                    onClick={()=>changeRingType(btn)}
+                    onClick={() =>
+                        ring.ring_type_heading === 'Ring Shape'
+                        ? changeRingType(btnIndex + 1)
+                        : ring.ring_type_heading === 'Gem Type'
+                        ? changeGemType(btnIndex + 1)
+                        : ring.ring_type_heading === 'Ring Curvature'
+                        ? changeRingCurvatureType(btnIndex+ 1)
+                        : ring.ring_type_heading === 'Gem line'
+                        ? changeRingLineType(btnIndex + 1)
+                        : ring.ring_type_heading === 'Material'
+                        ? changeRingMaterialType(btnIndex + 1)
+                        : null
+                    } 
                 >
                   <img src={btn} alt={`${btnIndex + 1}`} />
                 </div>
@@ -120,30 +155,6 @@ function Jwellery() {
             </div>
           </div>
         ))}
-        {/* material */}
-          <div  className="ring-type-container">
-            <div className="ring-type-container-title">Material</div>
-            <div className="ring-type-buttons">
-                <div  className="ring-type-button" id={`ring-material-1`}  
-                    onClick={()=>changeMaterial('ring-material-1')}
-                    style={{backgroundColor:'silver'}}
-                    >
-                  
-                </div>
-                <div  className="ring-type-button" id={`ring-material-2`}  
-                    onClick={()=>changeMaterial('ring-material-2')}
-                    style={{backgroundColor:'gold'}}
-                    >
-                  
-                </div>
-                <div  className="ring-type-button" id={'ring-materail-3'}  
-                    onClick={()=>changeMaterial('ring-material-3')}
-                    style={{backgroundColor:' #e39780'}}
-                >
-                  
-                </div>
-            </div>
-          </div>
       </div>
     </div>
   );
