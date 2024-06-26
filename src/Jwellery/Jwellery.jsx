@@ -83,29 +83,29 @@ function Jwellery() {
   const ring_data = [
     {
       ring_type_heading: 'Ring Shape',
-      ring_buttons: ["../../Rings/product15.jpeg",
+      ring_buttons: ['../../Rings/product15.jpeg',
        ],
       // ring_buttons: ['1','2','3','4']
     },
     {
       ring_type_heading: 'Gem Type',
-      ring_buttons: ["../../Rings/product15.jpeg",
-                    "../../Rings/product1.jpg",
-                    "../../Rings/product6.jpg",
-                    "../../Rings/product7.jpg",
-                    "../../Rings/product12.jpg",
+      ring_buttons: ['../../Rings/product15.jpeg',
+                    '../../Rings/product1.jpg',
+                    '../../Rings/product6.jpg',
+                    '../../Rings/product7.jpg',
+                    '../../Rings/product12.jpg',
           ],
       // ring_buttons: ['1','2','3','4','5','6','7','8']
     },
     {
       ring_type_heading: 'Ring Curvature',
-      ring_buttons: ["../../Rings/product15.jpeg",
+      ring_buttons: ['../../Rings/product15.jpeg',
        
         ],
     },
     {
       ring_type_heading: 'Gem line',
-      ring_buttons: ["../../Rings/product15.jpeg",
+      ring_buttons: ['../../Rings/product15.jpeg',
        
       ],
     },
@@ -165,72 +165,3 @@ function Jwellery() {
 
 export default Jwellery;
 
-
-
-// import React, { useState } from 'react';
-// import './Jwellery.css';
-
-// const Jewellery = () => {
-//   const [ringBase, setRingBase] = useState('https://dummyimage.com/300x300/ccc/fff.png&text=Ring+Base');
-//   const [ringGem, setRingGem] = useState('https://dummyimage.com/100x100/000/fff.png&text=Gem');
-
-//   const changeRingType = (event) => {
-//     setRingBase(event.target.value);
-//   };
-
-//   const changeGemType = (event) => {
-//     setRingGem(event.target.value);
-//   };
-
-//   const changeGemColor = (event) => {
-//     setRingGem(event.target.value);
-//   };
-
-//   const changeRingMaterial = (event) => {
-//     setRingBase(event.target.value);
-//   };
-
-//   return (
-//     // <div className="main-container">
-
-// //     <div className="configurator">
-// //       <div className="ring-container">
-// //         <img id="ringBase" src={ringBase} alt="Ring Base" />
-// //         <img id="ringGem" src={ringGem} alt="Ring Gem" />
-// //       </div>
-// //       <div className="controls">
-// //         <label htmlFor="ringType">Choose Ring Type:</label>
-// //         <select id="ringType" onChange={changeRingType}>
-// //           <option value="https://dummyimage.com/300x300/ccc/fff.png&text=Ring+Base">Default</option>
-// //           <option value="https://dummyimage.com/300x300/999/fff.png&text=Ring+Type+1">Type 1</option>
-// //           <option value="https://dummyimage.com/300x300/666/fff.png&text=Ring+Type+2">Type 2</option>
-// //         </select>
-        
-// //         <label htmlFor="gemType">Choose Gem Type:</label>
-// //         <select id="gemType" onChange={changeGemType}>
-// //           <option value="https://dummyimage.com/100x100/000/fff.png&text=Gem">Default</option>
-// //           <option value="https://dummyimage.com/100x100/ff0000/fff.png&text=Ruby">Ruby</option>
-// //           <option value="https://dummyimage.com/100x100/0000ff/fff.png&text=Sapphire">Sapphire</option>
-// //         </select>
-
-// //         <label htmlFor="gemColor">Choose Gem Color:</label>
-// //         <select id="gemColor" onChange={changeGemColor}>
-// //           <option value="https://dummyimage.com/100x100/000/fff.png&text=Gem">Default</option>
-// //           <option value="https://dummyimage.com/100x100/0000ff/fff.png&text=Blue+Gem">Blue</option>
-// //           <option value="https://dummyimage.com/100x100/ff0000/fff.png&text=Red+Gem">Red</option>
-// //         </select>
-        
-// //         <label htmlFor="ringMaterial">Choose Ring Material:</label>
-// //         <select id="ringMaterial" onChange={changeRingMaterial}>
-// //           <option value="https://dummyimage.com/300x300/ccc/fff.png&text=Silver+Ring">Silver</option>
-// //           <option value="https://dummyimage.com/300x300/ffd700/fff.png&text=Gold+Ring">Gold</option>
-// //           <option value="https://dummyimage.com/300x300/ff69b4/fff.png&text=Rose+Gold+Ring">Rose Gold</option>
-// //         </select>
-// //       </div>
-// //     </div>
-// //     // </div>
-
-// //   );
-// // };
-
-// // export default Jewellery;
