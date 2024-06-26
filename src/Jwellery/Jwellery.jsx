@@ -3,27 +3,30 @@ import { useState } from 'react';
 import './Jwellery.css'
 import React360Viewer from 'react-360-view';
 
+
+
 function Jwellery() {
 
   const [ringBase, setRingBase] = useState("11111");
   // const [gem, setGem] = useState('');
 
   let  images = {
-    "11111": "../Rings/product15.jpeg",
-    "11112": "../Rings/product17.jpeg",
-    "11113": "../Rings/product16.jpeg",
-    "12111": "../Rings/product1.jpg",
-    "12112": "../Rings/product5.jpg",
-    "12113": "../Rings/product4.jpg",
-    "13111": "../Rings/product6.jpg",
-    "13112": "../Rings/product11.jpg",
-    "13113": "../Rings/product10.jpg",
-    "14111": "../Rings/product7.jpg",
-    "14112": "../Rings/product9.jpg",
-    "14113": "../Rings/product8.jpg",
-    "15111": "../Rings/product12.jpg",
-    "15112": "../Rings/product14.jpg",
-    "15113": "../Rings/product13.jpg",
+    // "11111": "../../Rings",
+    "11111": "../../Rings/product15.jpeg",
+    "11112": "../../Rings/product17.jpeg",
+    "11113": "../../Rings/product16.jpeg",
+    "12111": "../../Rings/product1.jpg",
+    "12112": "../../Rings/product5.jpg",
+    "12113": "../../Rings/product4.jpg",
+    "13111": "../../Rings/product6.jpg",
+    "13112": "../../Rings/product11.jpg",
+    "13113": "../../Rings/product10.jpg",
+    "14111": "../../Rings/product7.jpg",
+    "14112": "../../Rings/product9.jpg",
+    "14113": "../../Rings/product8.jpg",
+    "15111": "../../Rings/product12.jpg",
+    "15112": "../../Rings/product14.jpg",
+    "15113": "../../Rings/product13.jpg",
   }
 
   function changeRingType(num) {
