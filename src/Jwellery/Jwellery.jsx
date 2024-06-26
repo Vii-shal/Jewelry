@@ -108,9 +108,9 @@ function Jwellery() {
     },
     {
       ring_type_heading: 'Material',
-      ring_buttons: ['../public/images/silver-btn.jpeg',
-        '../public/images/gold-btn.jpeg',
-         '../public/images/copper-btn.jpeg'],
+      ring_buttons: ['../Rings/Images/silver-btn.jpeg',
+        '../Rings/Images/gold-btn.jpeg',
+         '../Rings/Images/copper-btn.jpeg'],
     },
   ];
 
